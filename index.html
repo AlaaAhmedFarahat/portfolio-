@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imgs/imgs/favicon.ico" />
+    <title>Daniels</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--font awesome-->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!--bootstrap-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--main style-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!--navbar-->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container mt-3">
+        <a class="navbar-brand text-light" href="#">DANIELS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#works">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#clients">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--home-->
+    <header
+      id="home"
+      class="active vh-100 d-flex justify-content-center align-items-center section"
+    >
+      <div class="container text-center text-light">
+        <h5 class="mb-3">Hello</h5>
+        <h1>I AM <span id="title"></span></h1>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f rounded-5"></i>
+          <i class="fa-brands fa-twitter rounded-5"></i>
+          <i class="fa-brands fa-linkedin-in rounded-5"></i>
+          <i class="fa-brands fa-behance rounded-5"></i>
+          <i class="fa-brands fa-youtube rounded-5"></i>
+        </div>
+      </div>
+    </header>
+
+    <!--about-->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <div class="col-lg-6">
+            <div class="img-container">
+              <img
+                src="./imgs/imgs/hero.jpg"
+                alt="Jerry Daniels"
+                class="w-75 top-img"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>About me.</h2>
+            <p class="caption">UI / UX Designer & Web Developer</p>
+            <p class="details">
+              I am <span>Jerry Daniels</span> Lorem Ipsum is simply dummy text
+              of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever It has survived not only five
+              centuries, but also the leap into electronic but also the leap
+              into electronic typesetting, remaining essentially unchanged. It
+              was popularised in the 1960s with the release of Letraset sheets
+              containing
+            </p>
+
+            <!--skills-->
+            <div class="mt-4">
+              <div class="skill-bar">
+                <span>Web Design</span>
+                <div class="progress">
+                  <div class="progress-bar bg-dark" style="width: 95%">95%</div>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <span>Branding</span>
+                <div class="progress">
+                  <div class="progress-bar bg-dark" style="width: 80%">80%</div>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <span>Development</span>
+                <div class="progress">
+                  <div class="progress-bar bg-dark" style="width: 90%">90%</div>
+                </div>
+              </div>
+            </div>
+
+            <!--buttons-->
+            <div class="btn">
+              <button class="cv btn text-light">Download.CV</button>
+              <button class="contact btn text-dark btn-outline-dark ml-2">
+                Contact me
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--services-->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <div class="title text-center">
+          <h2 class="mb-3 var(--main-color)">Services.</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 d-flex">
+            <div class="text-center border py-5 bg-white rounded card">
+              <div
+                class="pb-3 fa-2xl d-flex justify-content-center align-items-center"
+              >
+                <i class="icon fa fa-laptop"></i>
+              </div>
+              <div class="caption">
+                <h5 class="var(--main-color)">Web Design</h5>
+                <p class="text-muted">
+                  Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                  the industry's standard dummy text ever
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="text-center border py-5 bg-white rounded card">
+              <div
+                class="pb-3 fa-2xl d-flex justify-content-center align-items-center"
+              >
+                <i class="icon fa fa-bullhorn"></i>
+              </div>
+              <div class="caption">
+                <h5 class="var(--main-color)">Branding</h5>
+                <p class="text-muted">
+                  Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                  the industry's standard dummy text ever
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="text-center border py-5 bg-white rounded card">
+              <div
+                class="pb-3 fa-2xl d-flex justify-content-center align-items-center"
+              >
+                <i class="icon fa-solid fa-umbrella"></i>
+              </div>
+              <div class="caption">
+                <h5 class="var(--main-color)">Development</h5>
+                <p class="text-muted">
+                  Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                  the industry's standard dummy text ever
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="text-center border py-5 bg-white rounded card">
+              <div
+                class="pb-3 fa-2xl d-flex justify-content-center align-items-center"
+              >
+                <i class="icon fa fa-diamond"></i>
+              </div>
+              <div class="caption">
+                <h5 class="var(--main-color)">Creative Design</h5>
+                <p class="text-muted">
+                  Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                  the industry's standard dummy text ever
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="text-center border py-5 bg-white rounded card">
+              <div
+                class="pb-3 fa-2xl d-flex justify-content-center align-items-center"
+              >
+                <i class="icon fa fa-television"></i>
+              </div>
+              <div class="caption">
+                <h5 class="var(--main-color)">Fully Responsive</h5>
+                <p class="text-muted">
+                  Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                  the industry's standard dummy text ever
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="text-center border py-5 bg-white rounded card">
+              <div
+                class="pb-3 fa-2xl d-flex justify-content-center align-items-center"
+              >
+                <i class="icon fa fa-camera text-center"></i>
+              </div>
+              <div class="caption">
+                <h5 class="var(--main-color)">Retina Ready</h5>
+                <p class="text-muted">
+                  Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                  the industry's standard dummy text ever
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--protfolio-->
+    <section id="works" class="py-5">
+      <div class="container">
+        <div class="text-center title">
+          <h2 class="mb-3 var(--main-color)">Portfolio.</h2>
+        </div>
+        <div>
+          <ul class="nav my-5 justify-content-center">
+            <li class="nav-item">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                All
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Brand
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Design
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-graphic-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-graphic"
+                type="button"
+                role="tab"
+                aria-controls="pills-graphic"
+                aria-selected="false"
+              >
+                Graphic
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                  <figure class="position-relative overflow-hidden">
+                    <img
+                      src="./imgs/imgs/portfolio/1.jpg"
+                      class="w-100"
+                      alt="My Work 1"
+                    />
+                    <figcaption class="position-absolute">
+                      <div class="work-overlay text-center">
+                        <h4>WEB DESIGN</h4>
+                        <div class="icons">
+                          <i class="fa fa-chain-broken"></i>
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <figure class="position-relative overflow-hidden">
+                    <img
+                      src="./imgs/imgs/portfolio/2.jpg"
+                      class="w-100"
+                      alt="My Work 1"
+                    />
+                    <figcaption class="position-absolute">
+                      <div class="work-overlay text-center">
+                        <h4>WEB DESIGN</h4>
+                        <div class="icons">
+                          <i class="fa fa-chain-broken"></i>
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <figure class="position-relative overflow-hidden">
+                    <img
+                      src="./imgs/imgs/portfolio/3.jpg"
+                      class="w-100"
+                      alt="My Work 1"
+                    />
+                    <figcaption class="position-absolute">
+                      <div class="work-overlay text-center">
+                        <h4>WEB DESIGN</h4>
+                        <div class="icons">
+                          <i class="fa fa-chain-broken"></i>
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <figure class="position-relative overflow-hidden">
+                    <img
+                      src="./imgs/imgs/portfolio/4.jpg"
+                      class="w-100"
+                      alt="My Work 1"
+                    />
+                    <figcaption class="position-absolute">
+                      <div class="work-overlay text-center">
+                        <h4>WEB DESIGN</h4>
+                        <div class="icons">
+                          <i class="fa fa-chain-broken"></i>
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <figure class="position-relative overflow-hidden">
+                    <img
+                      src="./imgs/imgs/portfolio/5.jpg"
+                      class="w-100"
+                      alt="My Work 1"
+                    />
+                    <figcaption class="position-absolute">
+                      <div class="work-overlay text-center">
+                        <h4>WEB DESIGN</h4>
+                        <div class="icons">
+                          <i class="fa fa-chain-broken"></i>
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <figure class="position-relative overflow-hidden">
+                    <img
+                      src="./imgs/imgs/portfolio/6.jpg"
+                      class="w-100"
+                      alt="My Work 1"
+                    />
+                    <figcaption class="position-absolute">
+                      <div class="work-overlay text-center">
+                        <h4>WEB DESIGN</h4>
+                        <div class="icons">
+                          <i class="fa fa-chain-broken"></i>
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                  <figure class="position-relative overflow-hidden">
+                    <img
+                      src="./imgs/imgs/portfolio/4.jpg"
+                      class="w-100"
+                      alt="My Work 1"
+                    />
+                    <figcaption class="position-absolute">
+                      <div class="work-overlay text-center">
+                        <h4>WEB DESIGN</h4>
+                        <div class="icons">
+                          <i class="fa fa-chain-broken"></i>
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <figure class="position-relative overflow-hidden">
+                    <img
+                      src="./imgs/imgs/portfolio/6.jpg"
+                      class="w-100"
+                      alt="My Work 1"
+                    />
+                    <figcaption class="position-absolute">
+                      <div class="work-overlay text-center">
+                        <h4>WEB DESIGN</h4>
+                        <div class="icons">
+                          <i class="fa fa-chain-broken"></i>
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                  <figure class="position-relative overflow-hidden">
+                    <img
+                      src="./imgs/imgs/portfolio/2.jpg"
+                      class="w-100"
+                      alt="My Work 1"
+                    />
+                    <figcaption class="position-absolute">
+                      <div class="work-overlay text-center">
+                        <h4>WEB DESIGN</h4>
+                        <div class="icons">
+                          <i class="fa fa-chain-broken"></i>
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <figure class="position-relative overflow-hidden">
+                    <img
+                      src="./imgs/imgs/portfolio/5.jpg"
+                      class="w-100"
+                      alt="My Work 1"
+                    />
+                    <figcaption class="position-absolute">
+                      <div class="work-overlay text-center">
+                        <h4>WEB DESIGN</h4>
+                        <div class="icons">
+                          <i class="fa fa-chain-broken"></i>
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-graphic"
+              role="tabpanel"
+              aria-labelledby="pills-graphic-tab"
+              tabindex="0"
+            >
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                  <figure class="position-relative overflow-hidden">
+                    <img
+                      src="./imgs/imgs/portfolio/1.jpg"
+                      class="w-100"
+                      alt="My Work 1"
+                    />
+                    <figcaption class="position-absolute">
+                      <div class="work-overlay text-center">
+                        <h4>WEB DESIGN</h4>
+                        <div class="icons">
+                          <i class="fa fa-chain-broken"></i>
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <figure class="position-relative overflow-hidden">
+                    <img
+                      src="./imgs/imgs/portfolio/3.jpg"
+                      class="w-100"
+                      alt="My Work 1"
+                    />
+                    <figcaption class="position-absolute">
+                      <div class="work-overlay text-center">
+                        <h4>WEB DESIGN</h4>
+                        <div class="icons">
+                          <i class="fa fa-chain-broken"></i>
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <figure class="position-relative overflow-hidden">
+                    <img
+                      src="./imgs/imgs/portfolio/5.jpg"
+                      class="w-100"
+                      alt="My Work 1"
+                    />
+                    <figcaption class="position-absolute">
+                      <div class="work-overlay text-center">
+                        <h4>WEB DESIGN</h4>
+                        <div class="icons">
+                          <i class="fa fa-chain-broken"></i>
+                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--clients-->
+    <section id="clients" class="py-5 bg-light">
+      <div class="container">
+        <div class="title text-center mb-5">
+          <h2 class="var(--main-color)">Testimonials.</h2>
+        </div>
+
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item pt-4 active">
+              <div class="text-center">
+                <div>
+                  <img
+                    src="./imgs/imgs/1_New1.jpg"
+                    style="width: 80px"
+                    class="rounded-circle"
+                    alt="Client 1"
+                  />
+                </div>
+                <p class="main pt-3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nihil placeat doloribus similique, natus odit officiis tenetur
+                  veniam unde reiciendis eveniet?
+                </p>
+                <p class="name">Alex Smith</p>
+                <p class="last">Envato Customer</p>
+              </div>
+            </div>
+            <div class="carousel-item pt-4">
+              <div class="text-center">
+                <div>
+                  <img
+                    src="./imgs/imgs/1_New1.jpg"
+                    style="width: 80px"
+                    class="rounded-circle"
+                    alt="Client 1"
+                  />
+                </div>
+                <p class="main pt-3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nihil placeat doloribus similique, natus odit officiis tenetur
+                  veniam unde reiciendis eveniet?
+                </p>
+                <p class="name">Alex Smith</p>
+                <p class="last">Envato Customer</p>
+              </div>
+            </div>
+            <div class="carousel-item pt-4">
+              <div class="text-center">
+                <div>
+                  <img
+                    src="./imgs/imgs/1_New1.jpg"
+                    style="width: 80px"
+                    class="rounded-circle"
+                    alt="Client 1"
+                  />
+                </div>
+                <p class="main pt-3">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  quidem tempora ratione id! Modi assumenda enim voluptatum
+                  maiores tenetur sint.
+                </p>
+                <p class="name">Alex Smith</p>
+                <p class="last">Envato Customer</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--counter-->
+    <div id="clients" class="counter">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="customers text-center py-4">
+              <div class="icon">
+                <i class="pb-4 fa-3x fa fa-users"> </i>
+              </div>
+              <h3 class="pb-4">850</h3>
+              <p class="cap">Happy Customers</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="customers text-center py-4">
+              <div class="icon">
+                <i class="pb-4 fa-3x fa-solid fa-thumbs-up"></i>
+              </div>
+              <h3 class="pb-4">230</h3>
+              <p class="cap">Complete Projects</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="customers text-center py-4">
+              <div class="icon">
+                <i class="pb-4 fa-3x fa-solid fa-bullhorn"></i>
+              </div>
+              <h3 class="pb-4">9450</h3>
+              <p class="cap">Lines Of Code</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="customers text-center py-4">
+              <div class="icon">
+                <i class="pb-4 fa-3x fa-solid fa-cloud-arrow-down"></i>
+              </div>
+              <h3 class="pb-4">780</h3>
+              <p class="cap">Files Downloaded</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--team-->
+    <section id="team" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="title text-center mb-5">
+            <h2 class="var(--main-color)">Our Team.</h2>
+          </div>
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card team-card">
+              <img src="./imgs/imgs/1.jpg" alt="John Doe" />
+              <div class="overlay">
+                <a href="#"><i class="fb fab fa-facebook fa-sm"></i></a>
+                <a href="#"><i class="tw fab fa-twitter fa-sm"></i></a>
+                <a href="#"><i class="pn fab fa-pinterest fa-sm"></i></a>
+                <a href="#"><i class="li fab fa-linkedin fa-sm"></i></a>
+              </div>
+              <div class="card-footer">
+                <h5>John Doe</h5>
+                <p>FRONT-END DEVELOPER</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card team-card">
+              <img src="./imgs/imgs/2.jpg" alt="Dave Wood" />
+              <div class="overlay">
+                <a href="#"><i class="fb fab fa-facebook fa-sm"></i></a>
+                <a href="#"><i class="tw fab fa-twitter fa-sm"></i></a>
+                <a href="#"><i class="pn fab fa-pinterest fa-sm"></i></a>
+                <a href="#"><i class="li fab fa-linkedin fa-sm"></i></a>
+              </div>
+              <div class="card-footer">
+                <h5>Dave Wood</h5>
+                <p>BACK-END DEVELOPER</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card team-card">
+              <img src="./imgs/imgs/1.jpg" alt="Claire Chedd" />
+              <div class="overlay">
+                <a href="#"><i class="fb fab fa-facebook fa-sm"></i></a>
+                <a href="#"><i class="tw fab fa-twitter fa-sm"></i></a>
+                <a href="#"><i class="pn fab fa-pinterest fa-sm"></i></a>
+                <a href="#"><i class="li fab fa-linkedin fa-sm"></i></a>
+              </div>
+              <div class="card-footer">
+                <h5>Claire Chedd</h5>
+                <p>BACK-END DEVELOPER</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--contact-->
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="title text-center mb-5">
+          <h2 class="var(--main-color)">Contact Us.</h2>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-4">
+            <div class="text-center py-3">
+              <div class="pb-3 icon fa-3x main-text">
+                <i class="fa-solid fa-location-arrow"></i>
+              </div>
+              <h5 class="fw-bold">Address</h5>
+              <p class="text-muted">6834 Hollywood Blvd - Los Angeles CA</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center py-3">
+              <div class="pb-3 icon fa-3x main-text">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <h5 class="fw-bold">Email</h5>
+              <p class="text-muted">Support@website.com</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center py-3">
+              <div class="pb-3 icon fa-3x main-text">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <h5 class="fw-bold">Phone</h5>
+              <p class="text-muted">+20 010 2517 8918</p>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Your Email"
+            />
+          </div>
+
+          <div class="col-12">
+            <textarea
+              type="text"
+              name="message"
+              id="message"
+              class="form-control"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <div class="col-12 text-start">
+            <button class="btn px-5 py-3">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer class="py-4 text-center">
+      <div class="container">
+        <p class="m-0">Copy Right 2018 © By Daniels All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!--JS-->
+    <script src="index.js" defer></script>
+    <!--Animation-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#title", {
+        strings: ["Larry Daniels", "Developer", "Designer"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+        loopCount: Infinity,
+      });
+    </script>
+    <!--Bootstrap-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

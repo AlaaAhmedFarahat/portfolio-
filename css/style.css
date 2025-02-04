@@ -1,0 +1,457 @@
+:root {
+  --main-color: #343434;
+}
+.main-text {
+  color: var(--main-color);
+}
+.main-bg {
+  background-color: var(--main-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat;
+}
+.container {
+  font-weight: 800;
+  font-size: 12px;
+  font-family: Montserrat;
+}
+
+#navbar {
+  color: #fff;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+#navbar.scrolled {
+  background-color: #00142088;
+  color: #ffff;
+}
+nav .active {
+  color: #000 !important;
+}
+
+#navbar .nav-item a{
+  position: relative;
+  text-decoration: none;
+  color: #ffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#navbar .nav-item a::after{
+  content: "";
+  position: absolute;
+  background-color:#000;
+  color: #000;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+#navbar .nav-item a:hover::after{
+  width: 90%;
+}
+#navbar .nav-item a:hover{
+color: #000!important;
+
+}
+#home {
+  background-image: url(../imgs/imgs/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.644);
+  background-blend-mode: multiply;
+}
+
+#home h5 {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+#home h1 {
+  font-weight: 200;
+  font-size: 60px;
+}
+
+#home h1 span{
+  font-weight: 400;
+}
+
+#home .icons .fa-brands {
+  background-color: rgba(0, 0, 0, 0.39);
+  padding: 8px;
+  font-size: 10px;
+}
+
+#home .icons .fa-brands:hover {
+  cursor: pointer;
+}
+
+#about .caption {
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+#about .details span {
+  font-size: 15px;
+  color: #748182;
+  font-weight: 700;
+}
+
+#about .details {
+  font-size: 15px;
+  color: #748182;
+  font-weight: 400;
+}
+
+.skill-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #e9ecef;
+  margin: 0 10px;
+}
+
+.progress-bar {
+  line-height: 20px; 
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+#about .cv {
+  transition: all 0.5s ease;
+  background-color: #1c1c1c;
+}
+#about .cv:hover {
+  color: #1c1c1c !important;
+  background-color: transparent;
+  border: solid #1c1c1c 1px;
+}
+
+#about .contact {
+  transition: all 0.5s ease;
+}
+
+#about .contact:hover {
+  color: white !important;
+  background-color: #1c1c1c;
+}
+
+#about h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+#about .btn {
+  margin-top: 3vh;
+  padding: 1vh 4vh;
+}
+#services .title h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#services .card {
+  margin-bottom: 2vh;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.6s ease;
+  text-align: center;
+}
+
+#services .card:hover {
+  transform: translateY(-5px);
+}
+
+#services .icon {
+  background-color: #f7f7f7;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 12px 0;
+}
+#services .card:hover .icon {
+  border: 2px solid #1c1c1c; 
+  background-color: #1c1c1c;
+  color: #f7f7f7;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  transition: all 0.5 ease;
+}
+
+#works .title h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#works figure {
+  margin: 0 !important;
+}
+
+#works figcaption {
+  background-color: #fefefec2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+#works figure img {
+  transition: all 0.3s;
+}
+
+#works figure:hover figcaption {
+  opacity: 1;
+}
+
+#works .work-overlay {
+  color: var(--main-color);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s;
+}
+
+#works figure:hover .work-overlay {
+  top: 50%;
+}
+
+#works ul button{
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.5s ease;
+}
+
+#works ul button.active {
+color: #748182;
+border-bottom: #748182 3px solid;
+}
+
+#works h4 {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Montserrat sans-serif;
+}
+
+#works .icons i {
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  padding: 8px 0;
+}
+#works .icons i:hover {
+  border: solid 1px black;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+}
+
+#clients .title h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#clients p.main {
+  line-height: 1.6;
+  word-spacing: 2px;
+  font-size: 15px;
+  color: #748182;
+  font-weight: 400;
+  max-width: 75%;
+  text-align: center;
+  margin: auto;
+}
+
+#clients p.name {
+  padding-top: 10px;
+  color: rgb(52, 52, 52);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Montserrat;
+}
+#clients p.last {
+  padding: 0 0 13px 0;
+  margin: 0;
+  color: #748182;
+  font-size: 12px;
+  font-weight: 600;
+}
+#clients .carousel-indicators {
+  position: static;
+}
+
+#clients .carousel-indicators button {
+  background-color: var(--main-color);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+#clients h3 {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Montserrat;
+}
+#clients .customers p.cap {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Poppins sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: #748182;
+}
+
+#team .title h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+.team-card {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  text-align: center;
+  margin: 20px;
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover img {
+  transform: scale(1.07);
+}
+
+.overlay {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.team-card:hover .overlay {
+  opacity: 1;
+  transform:rotateY(360deg);
+}
+
+.team-card .card-footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.team-card .card-footer h5,
+.team-card .card-footer p {
+  margin: 0;
+  padding: 5px 0;
+}
+.overlay i {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: white;
+  background-color: black;
+  margin: 0 10px;
+  padding: 18px 0;
+  transition: color 0.3s ease;
+  text-align: center;
+  border-radius: 50%;
+}
+.overlay .fb:hover {
+  color: #1877F2;
+  background-color: transparent;
+  border: solid #1877F2 1px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.overlay .tw:hover {
+  color: #1DA1F2;
+  background-color: transparent;
+  border: solid #1DA1F2 1px;
+  text-align: center;
+  border-radius: 50%;
+}
+.overlay .pn:hover {
+  color: #E60023;
+  background-color: transparent;
+  border: solid #E60023 1px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.overlay .li:hover {
+  color: #0077B5;
+  background-color: transparent;
+  border: solid #0077B5 1px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#contact .title h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#contact .icon i {
+  text-align: center;
+  background-color: #f7f7f7;
+  height: 70px;
+  width: 70px;
+  padding: 15px 0;
+  border-radius: 50%;
+}
+
+#contact .text-center:hover i{
+  background-color: black;
+  color: white;
+}
+
+#contact button {
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#contact button:hover {
+  color: black;
+  border: solid black 1px;
+  background-color: transparent;
+  font-size: 12px;
+}
+footer {
+  background-color: black;
+  color: #748182;
+}
